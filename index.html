@@ -6,8 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/2638/2396/t/48/assets/theme.css?v=41679355169897408691665182681">
     <title>TwelveBoard OneWheel Customiser</title>
-    <script type="module" crossorigin src="assets/index-0e32633d.js"></script>
-    <link rel="stylesheet" href="assets/index-b2042b19.css">
+    <style>
+      @font-face {
+        font-family: Avenir-Heavy;
+        src: url(//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/avenir-heavy-webfont.eot?v=43225940829744362061686059846);
+        src: url(//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/avenir-heavy-webfont.eot?v=43225940829744362061686059846) format("embedded-opentype"), url(//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/avenir-heavy-webfont.woff?v=44780565025122193961686052369) format("woff"), url(//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/avenir-heavy-webfont.ttf?v=44780565025122193961686059849) format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    .custom-zoom-cursor {
+        cursor: url('//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/zom.png?v=113631038557715366751686052438'),auto;
+        cursor: -webkit-image-set(url('//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/zom.png?v=113631038557715366751686052438') 1x, url('//cdn.shopify.com/s/files/1/2638/2396/t/59/assets/zom.png?v=113631038557715366751686052438') 2x),auto;
+    }
+
+    :root {
+        --default-text-font-size : 15px;
+        --base-text-font-size : 17px;
+        --heading-font-family : 'Avenir-Heavy', sans-serif;
+        --heading-font-weight : 500;
+        --heading-font-style : normal;
+        --text-font-family : "Avenir Next", sans-serif;
+        --text-font-weight : 500;
+        --text-font-style : normal;
+        --text-font-bolder-weight: 600;
+        --text-link-decoration : underline;
+        --text-color : #616161;
+        --text-color-rgb : 97, 97, 97;
+        --heading-color : #000000;
+        --border-color : #e8e8e8;
+        --border-color-rgb : 232, 232, 232;
+        --form-border-color : #dbdbdb;
+        --accent-color : #970303;
+        --accent-color-rgb : 151, 3, 3;
+        --link-color : #8a9297;
+        --link-color-hover : #646c71;
+        --background : #ffffff;
+        --secondary-background : #ffffff;
+        --secondary-background-rgb : 255, 255, 255;
+        --accent-background : rgba(151, 3, 3, 0.08);
+        --input-background: #ffffff;
+        --error-color : #cf0e0e;
+        --error-background : rgba(207, 14, 14, 0.07);
+        --success-color : #067123;
+        --success-background: rgba(6, 113, 35, 0.11);
+        --primary-button-background : #067123;
+        --primary-button-background-rgb : 6, 113, 35;
+        --primary-button-text-color : #ffffff;
+        --secondary-button-background : #616161;
+        --secondary-button-background-rgb: 97, 97, 97;
+        --secondary-button-text-color : #ffffff;
+        --header-background : #ffffff;
+        --header-text-color : #000000;
+        --header-light-text-color: #616161;
+        --header-border-color : rgba(97, 97, 97, 0.3);
+        --header-accent-color : #8a9297;
+        --footer-background-color: #000000;
+        --footer-heading-text-color: #ffffff;
+        --footer-body-text-color: #ffffff;
+        --footer-body-text-color-rgb: 255, 255, 255;
+        --footer-accent-color: #8a9297;
+        --footer-accent-color-rgb: 138, 146, 151;
+        --footer-border: none;
+        --flickity-arrow-color: #b5b5b5;
+        --product-on-sale-accent : #970303;
+        --product-on-sale-accent-rgb : 151, 3, 3;
+        --product-on-sale-color : #ffffff;
+        --product-in-stock-color : #000000;
+        --product-low-stock-color : #cf0e0e;
+        --product-sold-out-color : #8a9297;
+        --product-custom-label-1-background: #3f6ab1;
+        --product-custom-label-1-color : #ffffff;
+        --product-custom-label-2-background: #8a44ae;
+        --product-custom-label-2-color : #ffffff;
+        --product-review-star-color : #ffbd00;
+        --mobile-container-gutter : 20px;
+        --desktop-container-gutter: 40px;
+        /* Shopify related variables */
+        --payment-terms-background-color: #ffffff;
+    }
+    </style>
+    <script type="module" crossorigin src="/builder.js"></script>
+    <link rel="stylesheet" href="/builder.css">
   </head>
   <body>
     <div id="bundler-builder-app"></div>
